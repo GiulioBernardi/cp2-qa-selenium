@@ -34,5 +34,9 @@ public class automacao {
 		WebElement repositorioQa = driver.findElement(By.linkText("cp2-qa-selenium"));
 		repositorioQa.click();
 
+		//abre a página de insights do repositório
+		WebElement favoritaRepo = driver.findElement(By.linkText("Insights"));
+		favoritaRepo.click();
+
 	}
 }
