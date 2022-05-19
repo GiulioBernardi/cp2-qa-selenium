@@ -28,7 +28,11 @@ public class automacao {
 		//Clica para entrar no read.me do meu perfil
 		WebElement botaoPerfilRead = driver.findElement(By.linkText("GiulioBernardi/GiulioBernardi"));
 		botaoPerfilRead.click();
-		
+
+		//pesquisa no navegador pela url passada no parâmetro
+		driver.get("https://github.com/GiulioBernardi?tab=repositories");
+		WebElement repositorioQa = driver.findElement(By.linkText("cp2-qa-selenium"));
+		repositorioQa.click();
 
 	}
 }
