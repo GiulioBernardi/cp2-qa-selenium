@@ -21,5 +21,14 @@ public class automacao {
 		//Pesquisa a URL no parâmetro na barra de busca do navegador
 		driver.get("https://github.com/");
 
+		//No site do github, pesquisa a string GiulioBernardi na barra de pesquisa
+		WebElement pesquisaGithub = driver.findElement(By.name("q"));
+		pesquisaGithub.sendKeys("GiulioBernardi", Keys.ENTER);
+
+		//Clica para entrar no read.me do meu perfil
+		WebElement botaoPerfilRead = driver.findElement(By.linkText("GiulioBernardi/GiulioBernardi"));
+		botaoPerfilRead.click();
+		
+
 	}
 }
