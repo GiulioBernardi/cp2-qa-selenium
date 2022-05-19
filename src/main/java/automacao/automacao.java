@@ -38,5 +38,9 @@ public class automacao {
 		WebElement favoritaRepo = driver.findElement(By.linkText("Insights"));
 		favoritaRepo.click();
 
+		//printa nome do repositório
+		System.out.println("Nome da página: " + driver.getTitle());
+
+
 	}
 }
